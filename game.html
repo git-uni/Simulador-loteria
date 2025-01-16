@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="es">
+
+<head>
+ <!-- Datos que describen el documento -->
+ <meta charset="UTF-8" />
+ <title>Simlulador Loteria</title>
+ <meta name="author" content="Daniel Uria" />
+ <meta name="description" content="Pagina inicio" />
+ <meta name="keywords" content="home, inicio" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+ <script src="js/loteria.js"></script>
+ <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div id ="game"> 
+        <div id = "imagen">
+            <img src = "img/decimo-navidad.jpg" alt="Décimo de la loteria de navidad 2024" /> 
+        </div>
+
+
+        <div id="input">
+
+            <p> ¿Cuantos décimos desea comprar? </p>
+
+            <p> <input type = number min="1" step="1"> </p>
+           
+            <p> <button> Comprar </button> </p>
+
+        </div>
+    </div>
+
+
+    <div id="datos">
+        
+        <div id="datos-decimos">
+            <p> Decimos Jugados: 0 </p>
+            <p> Dinero gastado : 0 euros </p>
+        </div>
+
+        <div id="total">
+            <p> Total: 0 euros </p>
+        </div>
+
+    </div>
+
+<script>
+    var loteria = new Loteria();
+    $("button").attr("onclick","loteria.jugar()");
+</script>    
+</body>
+
+</html>
