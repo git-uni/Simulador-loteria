@@ -2,6 +2,9 @@ body {
     font-family: Tahoma, sans-serif;
     background-color: #FFFFFF;
     color: #000000;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    font-weight: bold;
 }
 
 #game{
@@ -9,7 +12,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 5vw;
     
 
 }
@@ -30,18 +33,19 @@ body {
     flex-basis: 50%;
     display: flex;
     flex-wrap: wrap;
-   
     padding: 0;
 }
 
 #input p{
     flex-basis: 100%;
+    color: #FFFFFF
     
 }
 
 
 #input input{
     margin-left: 2vw;
+    text-align: center;
 
 }
 #input button{
@@ -60,7 +64,6 @@ body {
 #datos-decimos{
     flex-basis: 50%;
     text-align: center;
-    border: 0.1rem solid #000000;
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -70,12 +73,12 @@ body {
 #datos-decimos p {
     margin:1vw;
     flex-basis: 100%;
+    color: #FFFFFF;
 }
 
 #total{
     flex-basis: 50%;
     text-align: center;
-    border: 0.1rem solid #000000;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -85,8 +88,23 @@ body {
 
 #total p{
     margin:1vw;
+    color: #FFFFFF;
+
     
-    
+}
+
+button{
+    border: none; 
+    color: #FFFFFF; 
+    background-color: #04AA6D;    
+    font-weight: bold;
+    padding: 1vw 2vh; 
+    cursor: pointer; 
+    border-radius: 5vw; 
+}
+
+button:hover{
+    background-color: #46a049;
 }
 
 
