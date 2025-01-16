@@ -106,6 +106,16 @@ button:hover{
     background-color: #46a049;
 }
 
+@media (max-width: 600px) {
+
+   
+
+    #imagen img {
+        width: 50vw;
+        height: 25vh;
+    }
+}
+
 
 
 
